@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+:root{
+    --title-font:'Merriweather', serif;   
+    --title-font-two: 'Inter', sans-serif;  
+    --primary-color-text:#070211; 
+    --primary-color-text-two:#FF0000; 
+    --color-white:#fff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-gap{
+    padding: 120px 0;
+}
+/* ================ Catagoris Start Here ===================== */
+.catagoris_area{
+    background: var(--color-whitet);
+}
+.catagori_inner{
+    text-align: center;
+    font-family: var(--title-font);
+
+}
+.catagori_inner h2{
+    color: var(--primary-color-text-two);
+    font-family: var(--title-font-two);
+    font-size: 88px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.catagori_inner p{
+    color: var(--primary-color-text-two);
+    font-family:var(--title-font-two);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.catagori_inner h4{
+    color: var(--primary-color-text);
+    font-family: var(--title-font-two);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+/* ================ Catagoris End Here ===================== */
+
+/* ================ Party Start Here ===================== */
+.party_part{
+background: var(--color-white);    
+}
+.party_inner{
+background-image: url(../assets/project-image/Vectorrr.png);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content:space-around;
+border-radius: 16px;
+position: relative;
+padding: 120px;
+overflow: hidden;
+
+}
+.party_part .party_inner::before{
+content: "";
+position: absolute;
+background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+width: 100%;
+top: 0;
+height: 100%;
+display: block;
+}
+.left_content{
+color:var(--color-white);
+text-align: left;
+z-index: 1;
+
+}
+.left_content h2{
+font-size: 64px;
+font-family: var(--title-font);
+font-weight: 900;
+line-height: 88px;
+letter-spacing: 7.04px;
+max-width: 593px;
+margin-bottom: 15px;
+}
+.left_content p{
+color: rgba(255, 255, 255, 0.80);
+font-family: var(--title-font-two);
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+max-width: 692px;
+margin-bottom: 25px;
+}
+.left_content a{
+font-family: var(--title-font-two);
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+display: block;
+color: var(--color-white);
+text-decoration: none;
+margin-left: 10px;
+}
+/* ================== Party End Here ===================== */
+
+
+
+/* ================== Banner Start Here ===================== */
+.banner_part{
+    background: var(--color-white);
+    margin-top: 50px;
+}
+.banner_inner{
+    background-image: url(../assets/project-image/banner.png);
+    background-repeat: no-repeat;
+    padding: 250px 0;
+    background-size: cover;
+    border-radius: 16px;
+    position: relative;
+    background-position:center;
+    overflow: hidden;
+    
+}
+.banner_part .banner_inner::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: block;
+}
+.banner_part .content_area{
+    text-align: center;
+    font-family: var(--title-font);
+    color: var(--color-white);
+    position: relative;
+    z-index: 1;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.content_area h4{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.content_area h2{
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+}
+/* ================ Banner End Here ===================== */
+
+/* ================ Hotel Start Here ===================== */
+.hotel_arae{
+    background: var(--color-white);
+}
+.hotel_inner{
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 100px 0 120px;
+    
+}
+.hotel_inner h4{
+    color: var(--primary-color-text);
+    font-family:var(--title-font-two);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px; 
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.hotel_inner h4 span{
+    color: var(--primary-color-text-two);
+}
+.hotel_inner a{
+    display: block;
+    max-width: max-content;
+    padding: 16px 32px ;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: var(--primary-color-text-two);
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--title-font-two);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* ================ Hotel End Here ===================== */
+
+/* ================ Offers Start Here ===================== */
+.offers_area{
+    background: var(--color-white);
+}
+.offer_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left-content {
+    margin-right: 70px;
+}
+.left-content h4{
+    color: var(--primary-color-text-two);
+    text-align:left;
+    font-family:var(--title-font-two);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.left-content h2{
+    color: var(--primary-color-text);
+    font-family: var(--title-font);
+    font-size: 48px;
+    font-weight: 900;
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.left-content p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family:var(--title-font-two);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 569px;
+}
+.righ-content{
+    margin-left: 118px;
+}
+.righ-content h2{
+    color: var(--primary-color-text-two);
+    font-family: var(--title-font-two);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.righ-content p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: var(--title-font-two);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 404px
+}
+.righ-content img{
+    margin-top: 40px;
+}
+/* ================ Offers End Here ===================== */
+
+/* ================ Newsletter Start Here ===================== */
+    .newsletter-area{
+        background: var(--color-white);
+    }
+    .newsletter_inner{
+        border-radius: 16px;
+        background: rgba(255, 0, 0, 0.05);
+        padding: 80px 0;  
+    }
+    .newsletter_inner h2{
+        font-family: var(--title-font);
+        color: var(--primary-color-text);
+        font-size: 48px;
+        font-weight: 900;
+        text-transform: capitalize;
+        margin-top: 40px;
+    }
+    .newsletter_inner p{
+        color: rgba(7, 2, 17, 0.60);
+        font-family: var(--title-font-two);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 25px;
+    }
+    .newsletter_inner .nwes_btn input{
+        display: block;
+        padding: 10px 237px 10px 30px;
+        border: none;
+        margin: 0 auto;
+        background: var(--color-white);
+        border-radius: 50px;
+        color: var(--primary-color-text);
+        font-family: var(--title-font-two);
+        font-size: 18px;
+        font-weight: 400;
+        height: 72px;
+        width: 100%;
+        max-width: 648px;
+    }
+    .newsletter_inner .nwes_btn input::-webkit-input-placeholder { 
+        color: rgba(7, 2, 17, 0.30);
+    }
+    .newsletter_inner .nwes_btn input::-moz-placeholder { 
+        color: rgba(7, 2, 17, 0.30);
+    }
+    .newsletter_inner .nwes_btn input:-ms-input-placeholder { 
+        color: rgba(7, 2, 17, 0.30);
+    }
+    .newsletter_inner .nwes_btn input:-moz-placeholder { 
+        color: rgba(7, 2, 17, 0.30);
+    }
+    .nwes_btn button{
+        display: block;
+        max-width: max-content;
+        padding: 24px 56px;
+        border: none;
+        margin: 0 auto;
+        background: var(--primary-color-text-two);
+        color: var(--color-white);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-radius: 0 50px 50px 0;
+        text-align: center;
+        font-family:var(--title-font-two);
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+
+    }
+    .newsletter_inner .nwes_btn {
+        position: relative;
+        max-width: 648px;
+        margin: 0 auto;
+    }
+    .nwes_btn{
+        margin-top: 40px;
+    }
+/* ================ Newsletter End Here ===================== */
+
+/* ================ Gallery Start Here ===================== */
+
+.gallery-part .gallery-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.gallery-part .gallery-wrap .gallery-item{
+    flex: 0 0 31%;
+    max-width: 31%;
+    margin: 15px 15px 8px 0px;
+    border-radius: 15px;
+}
+.gallery-part .gallery-wrap .gallery-item img{
+    width: 100%;
+}
+.gallery-part .gallery-content h4{
+    color: var(--primary-color-text-two);
+    font-family:var(--title-font-two);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.gallery-part .gallery-content h2{
+    color: var(--primary-color-text);
+    font-family: var(--title-font);
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.gallery-part .gallery-content p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: var(--title-font-two);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 892px;
+    margin-bottom: 40px;
+}
+/* ================ Gallery End Here ===================== */
+
+/* ================ Holidays Start Here ===================== */
+.holiday_area .holiday_content{
+    text-align: center;
+
+}
+.holiday_area .holiday_content h4{
+    color: var(--primary-color-text);
+    font-family: var(--title-font-two);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.holiday_area .holiday_content h2{
+    color: var(--primary-color-text);
+    font-family: var(--title-font);
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.holiday_area .holiday_content span{
+    color: var(--primary-color-text-two);
+}
+.holiday_area .holiday_content p{
+    color: rgba(7, 2, 17, 0.60);
+    font-family: var(--title-font-two);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.holiday_area .holiday-bottom{
+    border-radius: 16px 0px 16px 16px;
+    padding-top: 480px;
+    position: relative;
+    z-index: 1;
+}
+.holiday_area .holiday-bottom .bottom_inner{
+    height: 230px;
+    background: var(--primary-color-text-two);
+}
+.holiday_area .holiday-bottom .bottom_inner .left_side_image{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.holiday_area .holiday-bottom .bottom_inner .right_side_image{
+    position: absolute;
+    top: 77px;
+    right: 0;
+}
+.holiday_area .holiday-bottom .bottom_inner .right_side_image .discount_tag{
+    position: absolute;
+    top: 45px;
+    right: 255px;
+}
+/* ================ Holidays End Here ===================== */
+
+/* ================Footer Start Here ===================== */
+footer{
+    background: var(--primary-color-text);
+}
+.footer-area .link_area{
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0 50px;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.15);
+}
+.footer-area .link_area .right_part{
+    margin-right: 120px;
+}
+.footer-area .logo_area{
+    display: flex;
+    justify-content: center; 
+    padding: 45px 0 ;       
+}
+.footer-area .copyright_area{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 120px;
+    border-top: 2px solid rgb(255, 255, 255, 0.15);
+}
+.footer-area .link_area a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-white);
+    font-family:var(--title-font-two);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    max-width: 380px; 
+}
+.footer-area .link_area .right_part a{
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    gap: 10px;  
+}
+.footer-area .logo_area a{
+    display: block;
+    align-items: center;
+    margin-right: 15px;
+}
+.footer-area .copyright_area a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-white);
+    font-family:var(--title-font-two);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+/* ================Footer End Here ===================== */
